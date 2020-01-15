@@ -11,5 +11,6 @@ record = json.loads(r.text)
 url = record['files'][0]["links"]["self"]
 data = pd.read_csv(url)
 
-#plt.figure(figsize=(10,8))
-#plt.scatter(x=data.X,y=data.Y,s=data.Poblacion/10000)
+plt.figure(figsize=(10,8))
+plt.scatter(x=data.X,y=data.Y,s=data.Poblacion/10000)
+plt.show()
